@@ -33,12 +33,12 @@ export type Settings = {
 };
 
 export const DefaultSettings: Settings = {
-  serverName: "SleepingServer, waiting for his prince...",
+  serverName: "Esperando primeira conexão para ligar...",
   serverPort: 25565,
 
   maxPlayers: 20,
 
-  loginMessage: "...Waking server up, come back in a minute...",
+  loginMessage: "...Acordando o servidor. Volte daqui a pouco!...",
   serverOnlineMode: true,
 
   webPort: 0, // 0 to disable web hosting

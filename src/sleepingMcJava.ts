@@ -52,14 +52,14 @@ export class SleepingMcJava implements ISleepingServer {
     this.server.on("connection", (client: Client) => {
       !this.settings.hideOnConnectionLogs &&
       this.logger.info(
-        `A Prince has taken a quick peek. [${client.version}${this.getIp(
+        `Alguém pingou o servidor. [${client.version}${this.getIp(
           client
         )}]`
       );
     });
 
     this.server.on("listening", () => {
-      this.logger.info("[McJava] Ready for battle");
+      this.logger.info("[McJava] Pronto pra batalha");
     });
 
     this.server.on("login", (client) => {
